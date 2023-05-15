@@ -1,0 +1,12 @@
+#uso de while mientras el numero sea menor a 20
+clear
+echo -n "Ingrese un numero: "
+read n
+while test $n -le 20
+do
+  echo $n >> ~/num-ejer1
+  echo -n "Ingrese un numero: "
+  read n
+done
+
+

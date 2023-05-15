@@ -1,0 +1,17 @@
+#uso de until sumar numeros
+clear
+echo -n "Indique la cantidad de numeros a sumar: "
+read n    #cantidad de numeros a sumar
+c=0     #lleva la cuenta de cuantos numeros hemos sumado ya
+suma=0
+until test $c -eq $n
+do
+   clear
+   echo -n "Ingrese un numero a sumar: "
+   read num
+   suma=`expr $suma + $num`
+   c=`expr $c + 1`
+   echo "Resultado de la suma : $suma       cantidad: $c"
+   read a
+done
+

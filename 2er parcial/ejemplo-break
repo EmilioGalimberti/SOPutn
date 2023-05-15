@@ -1,0 +1,28 @@
+while true 
+do
+ echo nivel 1
+ while true 
+ do
+  echo nivel 2
+  while true 
+  do
+    echo nivel 3
+    while true 
+    do
+     echo nivel 4
+     read a
+     break   # sale de un bucle
+ #    exit    #sale del programa
+    done
+    echo regrese a nivel 3
+    read a
+    break 2   #sale de 2 bucles
+  done 
+    echo regrese a nivel 2
+    read a
+  done
+    echo regrese a nivel 1
+    read a
+    break
+done
+

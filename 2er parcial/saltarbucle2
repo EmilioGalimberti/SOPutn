@@ -1,0 +1,9 @@
+for i in `sort -n numeros`
+do
+   if [ $i -eq 9 ] 
+     then
+        continue 3
+   fi
+   echo $i
+done
+ 

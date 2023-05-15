@@ -1,0 +1,19 @@
+#uso de for contar lineas de archivos
+clear
+echo -n "Ingrese nombre del directorio: "
+read v1
+if test -d $v1
+then 
+   for i in `ls $v1`
+   do
+     if test -f $v1/$i
+     then
+        wc -l $v1/$i >> ~/lineas-ejer2
+     elif test -d $v1/$i 
+      then
+         echo subdirectorio $i
+         ls -l $v1/$i
+     fi
+   done
+fi
+
